@@ -1,0 +1,697 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/geometryofmeaning/roman-numeral-analysis/"
+     xml:base="https://w3id.org/geometryofmeaning/roman-numeral-analysis/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mp="https://w3id.org/polifonia/ontology/music-projection/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/">
+        <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/music-projection"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasDegree"/>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasFifthDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasFifthDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasFirstDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasFirstDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasFourthDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasFourthDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasSecondDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasSecondDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasSeventhDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasSeventhDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasSixthDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasSixthDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasThirdDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasThirdDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/involvesChord -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/involvesChord"/>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/involvesKey -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/involvesKey">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/involvesRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/involvesRole"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/AugmentedTriad -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/AugmentedTriad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/Triad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/CMajorScale -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/CMajorScale">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/MajorScale"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/DiminishedTriad -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/DiminishedTriad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/HalfDiminishedTetrad"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/Triad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/HalfDiminishedTetrad -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/HalfDiminishedTetrad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/Tetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/MajorScale -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/MajorScale">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/RomanNumeralAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/MajorSeventhTetrad -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/MajorSeventhTetrad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/Tetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/MajorTriad -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/MajorTriad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/MajorSeventhTetrad"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/Triad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/MinorSeventhTetrad -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/MinorSeventhTetrad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/Tetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/MinorTriad -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/MinorTriad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/MinorSeventhTetrad"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/Triad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/RomanNumeralAnalysis -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/RomanNumeralAnalysis"/>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/Tetrad -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/Tetrad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Chord"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/roman-numeral-analysis/Triad -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/roman-numeral-analysis/Triad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/roman-numeral-analysis/Tetrad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/A -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/A">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/A"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/AFlat -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/AFlat">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Flat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/AFlat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/ASharp -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/ASharp">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Sharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/ASharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/B -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/B">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/B"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/BFlat -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/BFlat">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Flat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/BFlat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/BSharp -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/BSharp">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Sharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/BSharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/C -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/C">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/C"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/CFlat -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/CFlat">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Flat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/CFlat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/CSharp -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/CSharp">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Sharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/CSharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/D -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/D">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/D"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/DFlat -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/DFlat">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Flat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/DFlat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/DSharp -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/DSharp">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Sharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/DSharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/E -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/E">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/E"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/EFlat -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/EFlat">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Flat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/EFlat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/ESharp -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/ESharp">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Sharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/ESharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/F -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/F">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/F"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/FFlat -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/FFlat">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Flat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/FFlat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/FSharp -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/FSharp">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Sharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/FSharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/G -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/G">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/G"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/GFlat -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/GFlat">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Flat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/GFlat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/GSharp -->
+
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-projection/GSharp">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasAccidental"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Sharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-projection/hasPitch"/>
+                <owl:hasValue rdf:resource="https://w3id.org/polifonia/ontology/music-projection/GSharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/AFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/AFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/ASharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/ASharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/BFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/BFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/BSharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/BSharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/CFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/CFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/CSharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/CSharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/DFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/DFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/DSharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/DSharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/EFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/EFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/ESharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/ESharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/FFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/FFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/FSharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/FSharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/GFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/GFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/GSharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/GSharp"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,792 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/"
+     xml:base="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mp="https://w3id.org/polifonia/ontology/music-projection/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/">
+        <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/music-projection"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasDegree"/>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasFifthDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasFifthDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasFirstDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasFirstDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasFourthDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasFourthDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasSecondDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasSecondDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasSeventhDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasSeventhDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasSixthDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasSixthDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasThirdDegree -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasThirdDegree">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/involvesChord -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/involvesChord"/>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/involvesKey -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/involvesKey">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/involvesRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/involvesRole"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/ReferenceNote -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/ReferenceNote">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_A -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/ReferenceNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_BFlat -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_BFlat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/ReferenceNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_C -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_C">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/ReferenceNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_D -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_D">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/ReferenceNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_E -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_E">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/ReferenceNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_F -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_F">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/ReferenceNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_G -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_G">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/ReferenceNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_A_on_A -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_A_on_A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_A_on_C -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_A_on_C">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_C"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_A_on_E -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_A_on_E">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_E"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_BFlat_on_BFlat -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_BFlat_on_BFlat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_BFlat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_BFlat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_BFlat_on_D -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_BFlat_on_D">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_BFlat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_BFlat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_BFlat_on_F -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_BFlat_on_F">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_BFlat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_BFlat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_C_on_C -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_C_on_C">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_C"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_C"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_C_on_E -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_C_on_E">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_C"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_E"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_C_on_G -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_C_on_G">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_C"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_D_on_A -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_D_on_A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_D"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_D_on_D -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_D_on_D">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_D"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_D"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_D_on_F -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_D_on_F">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_D"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_F"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_E_on_B -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_E_on_B">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_E"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_E_on_E -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_E_on_E">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_E"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_E"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_E_on_G -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_E_on_G">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_E"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_F_on_A -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_F_on_A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_F"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_F_on_C -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_F_on_C">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_F"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_C"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_F_on_F -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_F_on_F">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_F"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_F"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_G_on_B -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_G_on_B">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_G_on_D -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_G_on_D">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_D"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_G_on_G -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/RegularCadence_G_on_G">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Cadence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasReferenceNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Reference_G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/hasTargetNote"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/TargetNote -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/TargetNote">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-projection/Note"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_A -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/TargetNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_B -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_B">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/TargetNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_BFlat -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_BFlat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/TargetNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_C -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_C">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/TargetNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_D -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_D">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/TargetNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_E -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_E">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/TargetNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_F -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_F">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/TargetNote"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_G -->
+
+    <owl:Class rdf:about="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/Target_G">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geometryofmeaning/zarlino-cadence-analysis/TargetNote"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/AFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/AFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/ASharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/ASharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/BFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/BFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/BSharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/BSharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/CFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/CFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/CSharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/CSharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/DFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/DFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/DSharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/DSharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/EFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/EFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/ESharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/ESharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/FFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/FFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/FSharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/FSharp"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/GFlat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/GFlat"/>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-projection/GSharp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-projection/GSharp"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

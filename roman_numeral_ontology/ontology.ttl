@@ -1,0 +1,3750 @@
+@prefix : <https://w3id.org/geometryofmeaning/roman-numeral-analysis/> .
+@prefix mp: <https://w3id.org/polifonia/ontology/music-projection/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+: a owl:Ontology ;
+    owl:imports <https://w3id.org/polifonia/ontology/music-projection> .
+
+:AFlatDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :AFlatHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:AFlatHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :ASharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :DSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :BAugmentedTriad ],
+        :HarmonicMinorScale .
+
+:AFlatMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        :MajorScale .
+
+:AFlatMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :ASharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :BAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        :MelodicMinorScale .
+
+:AFlatMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :DSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :ASharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        :MinorScale .
+
+:AHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :BDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :GSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :CAugmentedTriad ],
+        :HarmonicMinorScale .
+
+:AMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :GSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        :MajorScale .
+
+:AMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :FSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :GSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :CAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        :MelodicMinorScale .
+
+:AMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :BDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        :MinorScale .
+
+:ASharpHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :ADiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        :HarmonicMinorScale .
+
+:ASharpMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :ADiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        :MajorScale .
+
+:ASharpMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :ADiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        :MelodicMinorScale .
+
+:ASharpMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        :MinorScale .
+
+:AugmentedTriad a owl:Class ;
+    rdfs:subClassOf :Triad .
+
+:BFlatHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :ADiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        :HarmonicMinorScale .
+
+:BFlatMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :ADiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        :MajorScale .
+
+:BFlatMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :ADiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DFlatAugmentedTriad ],
+        :MelodicMinorScale .
+
+:BFlatMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        :MinorScale .
+
+:BHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :ASharpDiminishedTriad ],
+        :HarmonicMinorScale .
+
+:BMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :ASharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DSharpMinorTriad ],
+        :MajorScale .
+
+:BMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :ASharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        :MelodicMinorScale .
+
+:BMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        :MinorScale .
+
+:BSharpDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :BSharpHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:BSharpHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :BDiminishedTriad ],
+        :HarmonicMinorScale .
+
+:BSharpMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :BDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        :MajorScale .
+
+:BSharpMajorTriad a owl:Class ;
+    rdfs:subClassOf :BSharpMajorSeventhTetrad,
+        :MajorTriad .
+
+:BSharpMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :ADiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :BDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        :MelodicMinorScale .
+
+:BSharpMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        :MinorScale .
+
+:BSharpMinorTriad a owl:Class ;
+    rdfs:subClassOf :BSharpMinorSeventhTetrad,
+        :MinorTriad .
+
+:CFlatDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :CFlatHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:CFlatHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :BFlatDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        :HarmonicMinorScale .
+
+:CFlatMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :ASharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        :MajorScale .
+
+:CFlatMajorTriad a owl:Class ;
+    rdfs:subClassOf :CFlatMajorSeventhTetrad,
+        :MajorTriad .
+
+:CFlatMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :ASharpDiminishedTriad ],
+        :MelodicMinorScale .
+
+:CFlatMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :CSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        :MinorScale .
+
+:CFlatMinorTriad a owl:Class ;
+    rdfs:subClassOf :CFlatMinorSeventhTetrad,
+        :MinorTriad .
+
+:CHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :BDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        :HarmonicMinorScale .
+
+:CMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :BDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        :MajorScale .
+
+:CMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :ADiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :BDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        :MelodicMinorScale .
+
+:CMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        :MinorScale .
+
+:CSharpHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GSharpMajorTriad ],
+        :HarmonicMinorScale .
+
+:CSharpMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :GFlatMajorTriad ],
+        :MajorScale .
+
+:CSharpMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :ASharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        :MelodicMinorScale .
+
+:CSharpMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        :MinorScale .
+
+:DFlatDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DFlatHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:DFlatHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DSharpDiminishedTriad ],
+        :HarmonicMinorScale .
+
+:DFlatMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :GFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        :MajorScale .
+
+:DFlatMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :GFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :BFlatDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        :MelodicMinorScale .
+
+:DFlatMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :DSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        :MinorScale .
+
+:DFlatMinorTriad a owl:Class ;
+    rdfs:subClassOf :DFlatMinorSeventhTetrad,
+        :MinorTriad .
+
+:DHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :EDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :FAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        :HarmonicMinorScale .
+
+:DMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        :MajorScale .
+
+:DMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :FAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :BDiminishedTriad ],
+        :MelodicMinorScale .
+
+:DMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :EDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        :MinorScale .
+
+:DSharpHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :ASharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :FSharpAugmentedTriad ],
+        :HarmonicMinorScale .
+
+:DSharpMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        :MajorScale .
+
+:DSharpMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GFlatAugmentedTriad ],
+        :MelodicMinorScale .
+
+:DSharpMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :ASharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        :MinorScale .
+
+:EFlatHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AFlatMinorTriad ],
+        :HarmonicMinorScale .
+
+:EFlatMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        :MajorScale .
+
+:EFlatMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CDiminishedTriad ],
+        :MelodicMinorScale .
+
+:EFlatMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :CSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        :MinorScale .
+
+:EHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        :HarmonicMinorScale .
+
+:EMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DSharpDiminishedTriad ],
+        :MajorScale .
+
+:EMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DSharpDiminishedTriad ],
+        :MelodicMinorScale .
+
+:EMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        :MinorScale .
+
+:ESharpDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DiminishedTriad,
+        :ESharpHalfDiminishedTetrad .
+
+:ESharpHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :EDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        :HarmonicMinorScale .
+
+:ESharpMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :EDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        :MajorScale .
+
+:ESharpMajorTriad a owl:Class ;
+    rdfs:subClassOf :ESharpMajorSeventhTetrad,
+        :MajorTriad .
+
+:ESharpMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :EDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        :MelodicMinorScale .
+
+:ESharpMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        :MinorScale .
+
+:ESharpMinorTriad a owl:Class ;
+    rdfs:subClassOf :ESharpMinorSeventhTetrad,
+        :MinorTriad .
+
+:FFlatDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DiminishedTriad,
+        :FFlatHalfDiminishedTetrad .
+
+:FFlatHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :EFlatDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        :HarmonicMinorScale .
+
+:FFlatMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DSharpDiminishedTriad ],
+        :MajorScale .
+
+:FFlatMajorTriad a owl:Class ;
+    rdfs:subClassOf :FFlatMajorSeventhTetrad,
+        :MajorTriad .
+
+:FFlatMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        :MelodicMinorScale .
+
+:FFlatMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :FSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        :MinorScale .
+
+:FFlatMinorTriad a owl:Class ;
+    rdfs:subClassOf :FFlatMinorSeventhTetrad,
+        :MinorTriad .
+
+:FHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :EDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        :HarmonicMinorScale .
+
+:FMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :EDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        :MajorScale .
+
+:FMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :EDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        :MelodicMinorScale .
+
+:FMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        :MinorScale .
+
+:FSharpHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AAugmentedTriad ],
+        :HarmonicMinorScale .
+
+:FSharpMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :ASharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        :MajorScale .
+
+:FSharpMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        :MelodicMinorScale .
+
+:FSharpMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        :MinorScale .
+
+:GFlatDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DiminishedTriad,
+        :GFlatHalfDiminishedTetrad .
+
+:GFlatHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CSharpMajorTriad ],
+        :HarmonicMinorScale .
+
+:GFlatMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :ASharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :EFlatMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        :MajorScale .
+
+:GFlatMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :EFlatDiminishedTriad ],
+        :MelodicMinorScale .
+
+:GFlatMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :GSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :AMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :FSharpMinorTriad ],
+        :MinorScale .
+
+:GFlatMinorTriad a owl:Class ;
+    rdfs:subClassOf :GFlatMinorSeventhTetrad,
+        :MinorTriad .
+
+:GHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :ADiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :BFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        :HarmonicMinorScale .
+
+:GMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :GMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :EMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :BMinorTriad ],
+        :MajorScale .
+
+:GMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FSharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :CMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :EDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :BFlatAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :AMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :DMajorTriad ],
+        :MelodicMinorScale .
+
+:GMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :BFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :GMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :ADiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :DMinorTriad ],
+        :MinorScale .
+
+:GSharpHarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :ASharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :BAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :DSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        :HarmonicMinorScale .
+
+:GSharpMajorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :CMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :FMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :AFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :DFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :EFlatMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :BFlatMinorTriad ],
+        :MajorScale .
+
+:GSharpMelodicMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :FDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :ASharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :BAugmentedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :GDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :DSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :CSharpMajorTriad ],
+        :MelodicMinorScale .
+
+:GSharpMinorScale a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSecondDegree ;
+            owl:someValuesFrom :ASharpDiminishedTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFifthDegree ;
+            owl:someValuesFrom :DSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFourthDegree ;
+            owl:someValuesFrom :CSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFirstDegree ;
+            owl:someValuesFrom :GSharpMinorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSeventhDegree ;
+            owl:someValuesFrom :FSharpMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSixthDegree ;
+            owl:someValuesFrom :EMajorTriad ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasThirdDegree ;
+            owl:someValuesFrom :BMajorTriad ],
+        :MinorScale .
+
+:involvesChord a owl:ObjectProperty .
+
+:involvesKey a owl:ObjectProperty ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+:involvesRole a owl:ObjectProperty .
+
+:AA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:AFlatA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:AFlatHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:AFlatMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:AFlatMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:AFlatT a owl:Class ;
+    rdfs:subClassOf :AFlatd,
+        :T .
+
+:AFlata a owl:Class ;
+    rdfs:subClassOf :AFlati,
+        :a .
+
+:AFlatd a owl:Class ;
+    rdfs:subClassOf :AFlata,
+        :AFlate,
+        :d .
+
+:AFlatg a owl:Class ;
+    rdfs:subClassOf :AFlatu,
+        :g .
+
+:AFlati a owl:Class ;
+    rdfs:subClassOf :AFlatr,
+        :i .
+
+:AFlatm a owl:Class ;
+    rdfs:subClassOf :AFlatg,
+        :m .
+
+:AFlatn a owl:Class ;
+    rdfs:subClassOf :AFlate,
+        :n .
+
+:AFlatr a owl:Class ;
+    rdfs:subClassOf :AFlatT,
+        :r .
+
+:AFlatt a owl:Class ;
+    rdfs:subClassOf :AFlatn,
+        :t .
+
+:AFlatu a owl:Class ;
+    rdfs:subClassOf :AFlatA,
+        :u .
+
+:AHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:AMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:AMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:ASharpA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:ASharpHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:ASharpMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:ASharpMajorTriad a owl:Class ;
+    rdfs:subClassOf :ASharpMajorSeventhTetrad,
+        :MajorTriad .
+
+:ASharpMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:ASharpT a owl:Class ;
+    rdfs:subClassOf :ASharpd,
+        :T .
+
+:ASharpa a owl:Class ;
+    rdfs:subClassOf :ASharpi,
+        :a .
+
+:ASharpd a owl:Class ;
+    rdfs:subClassOf :ASharpa,
+        :ASharpe,
+        :d .
+
+:ASharpg a owl:Class ;
+    rdfs:subClassOf :ASharpu,
+        :g .
+
+:ASharpi a owl:Class ;
+    rdfs:subClassOf :ASharpr,
+        :i .
+
+:ASharpm a owl:Class ;
+    rdfs:subClassOf :ASharpg,
+        :m .
+
+:ASharpn a owl:Class ;
+    rdfs:subClassOf :ASharpe,
+        :n .
+
+:ASharpr a owl:Class ;
+    rdfs:subClassOf :ASharpT,
+        :r .
+
+:ASharpt a owl:Class ;
+    rdfs:subClassOf :ASharpn,
+        :t .
+
+:ASharpu a owl:Class ;
+    rdfs:subClassOf :ASharpA,
+        :u .
+
+:AT a owl:Class ;
+    rdfs:subClassOf :Ad,
+        :T .
+
+:Aa a owl:Class ;
+    rdfs:subClassOf :Ai,
+        :a .
+
+:Ad a owl:Class ;
+    rdfs:subClassOf :Aa,
+        :Ae,
+        :d .
+
+:Ag a owl:Class ;
+    rdfs:subClassOf :Au,
+        :g .
+
+:Ai a owl:Class ;
+    rdfs:subClassOf :Ar,
+        :i .
+
+:Am a owl:Class ;
+    rdfs:subClassOf :Ag,
+        :m .
+
+:An a owl:Class ;
+    rdfs:subClassOf :Ae,
+        :n .
+
+:Ar a owl:Class ;
+    rdfs:subClassOf :AT,
+        :r .
+
+:At a owl:Class ;
+    rdfs:subClassOf :An,
+        :t .
+
+:Au a owl:Class ;
+    rdfs:subClassOf :AA,
+        :u .
+
+:BA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:BFlatA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:BFlatHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:BFlatMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:BFlatMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:BFlatT a owl:Class ;
+    rdfs:subClassOf :BFlatd,
+        :T .
+
+:BFlata a owl:Class ;
+    rdfs:subClassOf :BFlati,
+        :a .
+
+:BFlatd a owl:Class ;
+    rdfs:subClassOf :BFlata,
+        :BFlate,
+        :d .
+
+:BFlatg a owl:Class ;
+    rdfs:subClassOf :BFlatu,
+        :g .
+
+:BFlati a owl:Class ;
+    rdfs:subClassOf :BFlatr,
+        :i .
+
+:BFlatm a owl:Class ;
+    rdfs:subClassOf :BFlatg,
+        :m .
+
+:BFlatn a owl:Class ;
+    rdfs:subClassOf :BFlate,
+        :n .
+
+:BFlatr a owl:Class ;
+    rdfs:subClassOf :BFlatT,
+        :r .
+
+:BFlatt a owl:Class ;
+    rdfs:subClassOf :BFlatn,
+        :t .
+
+:BFlatu a owl:Class ;
+    rdfs:subClassOf :BFlatA,
+        :u .
+
+:BHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:BMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:BMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:BSharpA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:BSharpHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:BSharpMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:BSharpMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:BSharpT a owl:Class ;
+    rdfs:subClassOf :BSharpd,
+        :T .
+
+:BSharpa a owl:Class ;
+    rdfs:subClassOf :BSharpi,
+        :a .
+
+:BSharpd a owl:Class ;
+    rdfs:subClassOf :BSharpa,
+        :BSharpe,
+        :d .
+
+:BSharpg a owl:Class ;
+    rdfs:subClassOf :BSharpu,
+        :g .
+
+:BSharpi a owl:Class ;
+    rdfs:subClassOf :BSharpr,
+        :i .
+
+:BSharpm a owl:Class ;
+    rdfs:subClassOf :BSharpg,
+        :m .
+
+:BSharpn a owl:Class ;
+    rdfs:subClassOf :BSharpe,
+        :n .
+
+:BSharpr a owl:Class ;
+    rdfs:subClassOf :BSharpT,
+        :r .
+
+:BSharpt a owl:Class ;
+    rdfs:subClassOf :BSharpn,
+        :t .
+
+:BSharpu a owl:Class ;
+    rdfs:subClassOf :BSharpA,
+        :u .
+
+:BT a owl:Class ;
+    rdfs:subClassOf :Bd,
+        :T .
+
+:Ba a owl:Class ;
+    rdfs:subClassOf :Bi,
+        :a .
+
+:Bd a owl:Class ;
+    rdfs:subClassOf :Ba,
+        :Be,
+        :d .
+
+:Bg a owl:Class ;
+    rdfs:subClassOf :Bu,
+        :g .
+
+:Bi a owl:Class ;
+    rdfs:subClassOf :Br,
+        :i .
+
+:Bm a owl:Class ;
+    rdfs:subClassOf :Bg,
+        :m .
+
+:Bn a owl:Class ;
+    rdfs:subClassOf :Be,
+        :n .
+
+:Br a owl:Class ;
+    rdfs:subClassOf :BT,
+        :r .
+
+:Bt a owl:Class ;
+    rdfs:subClassOf :Bn,
+        :t .
+
+:Bu a owl:Class ;
+    rdfs:subClassOf :BA,
+        :u .
+
+:CA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:CFlatA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:CFlatHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:CFlatMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:CFlatMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:CFlatT a owl:Class ;
+    rdfs:subClassOf :CFlatd,
+        :T .
+
+:CFlata a owl:Class ;
+    rdfs:subClassOf :CFlati,
+        :a .
+
+:CFlatd a owl:Class ;
+    rdfs:subClassOf :CFlata,
+        :CFlate,
+        :d .
+
+:CFlatg a owl:Class ;
+    rdfs:subClassOf :CFlatu,
+        :g .
+
+:CFlati a owl:Class ;
+    rdfs:subClassOf :CFlatr,
+        :i .
+
+:CFlatm a owl:Class ;
+    rdfs:subClassOf :CFlatg,
+        :m .
+
+:CFlatn a owl:Class ;
+    rdfs:subClassOf :CFlate,
+        :n .
+
+:CFlatr a owl:Class ;
+    rdfs:subClassOf :CFlatT,
+        :r .
+
+:CFlatt a owl:Class ;
+    rdfs:subClassOf :CFlatn,
+        :t .
+
+:CFlatu a owl:Class ;
+    rdfs:subClassOf :CFlatA,
+        :u .
+
+:CHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:CMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:CMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:CSharpA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:CSharpHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:CSharpMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:CSharpMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:CSharpT a owl:Class ;
+    rdfs:subClassOf :CSharpd,
+        :T .
+
+:CSharpa a owl:Class ;
+    rdfs:subClassOf :CSharpi,
+        :a .
+
+:CSharpd a owl:Class ;
+    rdfs:subClassOf :CSharpa,
+        :CSharpe,
+        :d .
+
+:CSharpg a owl:Class ;
+    rdfs:subClassOf :CSharpu,
+        :g .
+
+:CSharpi a owl:Class ;
+    rdfs:subClassOf :CSharpr,
+        :i .
+
+:CSharpm a owl:Class ;
+    rdfs:subClassOf :CSharpg,
+        :m .
+
+:CSharpn a owl:Class ;
+    rdfs:subClassOf :CSharpe,
+        :n .
+
+:CSharpr a owl:Class ;
+    rdfs:subClassOf :CSharpT,
+        :r .
+
+:CSharpt a owl:Class ;
+    rdfs:subClassOf :CSharpn,
+        :t .
+
+:CSharpu a owl:Class ;
+    rdfs:subClassOf :CSharpA,
+        :u .
+
+:CT a owl:Class ;
+    rdfs:subClassOf :Cd,
+        :T .
+
+:Ca a owl:Class ;
+    rdfs:subClassOf :Ci,
+        :a .
+
+:Cd a owl:Class ;
+    rdfs:subClassOf :Ca,
+        :Ce,
+        :d .
+
+:Cg a owl:Class ;
+    rdfs:subClassOf :Cu,
+        :g .
+
+:Ci a owl:Class ;
+    rdfs:subClassOf :Cr,
+        :i .
+
+:Cm a owl:Class ;
+    rdfs:subClassOf :Cg,
+        :m .
+
+:Cn a owl:Class ;
+    rdfs:subClassOf :Ce,
+        :n .
+
+:Cr a owl:Class ;
+    rdfs:subClassOf :CT,
+        :r .
+
+:Ct a owl:Class ;
+    rdfs:subClassOf :Cn,
+        :t .
+
+:Cu a owl:Class ;
+    rdfs:subClassOf :CA,
+        :u .
+
+:DA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:DFlatA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:DFlatHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:DFlatMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:DFlatMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:DFlatT a owl:Class ;
+    rdfs:subClassOf :DFlatd,
+        :T .
+
+:DFlata a owl:Class ;
+    rdfs:subClassOf :DFlati,
+        :a .
+
+:DFlatd a owl:Class ;
+    rdfs:subClassOf :DFlata,
+        :DFlate,
+        :d .
+
+:DFlatg a owl:Class ;
+    rdfs:subClassOf :DFlatu,
+        :g .
+
+:DFlati a owl:Class ;
+    rdfs:subClassOf :DFlatr,
+        :i .
+
+:DFlatm a owl:Class ;
+    rdfs:subClassOf :DFlatg,
+        :m .
+
+:DFlatn a owl:Class ;
+    rdfs:subClassOf :DFlate,
+        :n .
+
+:DFlatr a owl:Class ;
+    rdfs:subClassOf :DFlatT,
+        :r .
+
+:DFlatt a owl:Class ;
+    rdfs:subClassOf :DFlatn,
+        :t .
+
+:DFlatu a owl:Class ;
+    rdfs:subClassOf :DFlatA,
+        :u .
+
+:DHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:DMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:DMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:DSharpA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:DSharpHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:DSharpMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:DSharpMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:DSharpT a owl:Class ;
+    rdfs:subClassOf :DSharpd,
+        :T .
+
+:DSharpa a owl:Class ;
+    rdfs:subClassOf :DSharpi,
+        :a .
+
+:DSharpd a owl:Class ;
+    rdfs:subClassOf :DSharpa,
+        :DSharpe,
+        :d .
+
+:DSharpg a owl:Class ;
+    rdfs:subClassOf :DSharpu,
+        :g .
+
+:DSharpi a owl:Class ;
+    rdfs:subClassOf :DSharpr,
+        :i .
+
+:DSharpm a owl:Class ;
+    rdfs:subClassOf :DSharpg,
+        :m .
+
+:DSharpn a owl:Class ;
+    rdfs:subClassOf :DSharpe,
+        :n .
+
+:DSharpr a owl:Class ;
+    rdfs:subClassOf :DSharpT,
+        :r .
+
+:DSharpt a owl:Class ;
+    rdfs:subClassOf :DSharpn,
+        :t .
+
+:DSharpu a owl:Class ;
+    rdfs:subClassOf :DSharpA,
+        :u .
+
+:DT a owl:Class ;
+    rdfs:subClassOf :Dd,
+        :T .
+
+:Da a owl:Class ;
+    rdfs:subClassOf :Di,
+        :a .
+
+:Dd a owl:Class ;
+    rdfs:subClassOf :Da,
+        :De,
+        :d .
+
+:Dg a owl:Class ;
+    rdfs:subClassOf :Du,
+        :g .
+
+:Di a owl:Class ;
+    rdfs:subClassOf :Dr,
+        :i .
+
+:Dm a owl:Class ;
+    rdfs:subClassOf :Dg,
+        :m .
+
+:Dn a owl:Class ;
+    rdfs:subClassOf :De,
+        :n .
+
+:Dr a owl:Class ;
+    rdfs:subClassOf :DT,
+        :r .
+
+:Dt a owl:Class ;
+    rdfs:subClassOf :Dn,
+        :t .
+
+:Du a owl:Class ;
+    rdfs:subClassOf :DA,
+        :u .
+
+:EA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:EFlatA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:EFlatHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:EFlatMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:EFlatMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:EFlatT a owl:Class ;
+    rdfs:subClassOf :EFlatd,
+        :T .
+
+:EFlata a owl:Class ;
+    rdfs:subClassOf :EFlati,
+        :a .
+
+:EFlatd a owl:Class ;
+    rdfs:subClassOf :EFlata,
+        :EFlate,
+        :d .
+
+:EFlatg a owl:Class ;
+    rdfs:subClassOf :EFlatu,
+        :g .
+
+:EFlati a owl:Class ;
+    rdfs:subClassOf :EFlatr,
+        :i .
+
+:EFlatm a owl:Class ;
+    rdfs:subClassOf :EFlatg,
+        :m .
+
+:EFlatn a owl:Class ;
+    rdfs:subClassOf :EFlate,
+        :n .
+
+:EFlatr a owl:Class ;
+    rdfs:subClassOf :EFlatT,
+        :r .
+
+:EFlatt a owl:Class ;
+    rdfs:subClassOf :EFlatn,
+        :t .
+
+:EFlatu a owl:Class ;
+    rdfs:subClassOf :EFlatA,
+        :u .
+
+:EHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:EMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:EMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:ESharpA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:ESharpHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:ESharpMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:ESharpMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:ESharpT a owl:Class ;
+    rdfs:subClassOf :ESharpd,
+        :T .
+
+:ESharpa a owl:Class ;
+    rdfs:subClassOf :ESharpi,
+        :a .
+
+:ESharpd a owl:Class ;
+    rdfs:subClassOf :ESharpa,
+        :ESharpe,
+        :d .
+
+:ESharpg a owl:Class ;
+    rdfs:subClassOf :ESharpu,
+        :g .
+
+:ESharpi a owl:Class ;
+    rdfs:subClassOf :ESharpr,
+        :i .
+
+:ESharpm a owl:Class ;
+    rdfs:subClassOf :ESharpg,
+        :m .
+
+:ESharpn a owl:Class ;
+    rdfs:subClassOf :ESharpe,
+        :n .
+
+:ESharpr a owl:Class ;
+    rdfs:subClassOf :ESharpT,
+        :r .
+
+:ESharpt a owl:Class ;
+    rdfs:subClassOf :ESharpn,
+        :t .
+
+:ESharpu a owl:Class ;
+    rdfs:subClassOf :ESharpA,
+        :u .
+
+:ET a owl:Class ;
+    rdfs:subClassOf :Ed,
+        :T .
+
+:Ea a owl:Class ;
+    rdfs:subClassOf :Ei,
+        :a .
+
+:Ed a owl:Class ;
+    rdfs:subClassOf :Ea,
+        :Ee,
+        :d .
+
+:Eg a owl:Class ;
+    rdfs:subClassOf :Eu,
+        :g .
+
+:Ei a owl:Class ;
+    rdfs:subClassOf :Er,
+        :i .
+
+:Em a owl:Class ;
+    rdfs:subClassOf :Eg,
+        :m .
+
+:En a owl:Class ;
+    rdfs:subClassOf :Ee,
+        :n .
+
+:Er a owl:Class ;
+    rdfs:subClassOf :ET,
+        :r .
+
+:Et a owl:Class ;
+    rdfs:subClassOf :En,
+        :t .
+
+:Eu a owl:Class ;
+    rdfs:subClassOf :EA,
+        :u .
+
+:FA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:FFlatA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:FFlatHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:FFlatMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:FFlatMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:FFlatT a owl:Class ;
+    rdfs:subClassOf :FFlatd,
+        :T .
+
+:FFlata a owl:Class ;
+    rdfs:subClassOf :FFlati,
+        :a .
+
+:FFlatd a owl:Class ;
+    rdfs:subClassOf :FFlata,
+        :FFlate,
+        :d .
+
+:FFlatg a owl:Class ;
+    rdfs:subClassOf :FFlatu,
+        :g .
+
+:FFlati a owl:Class ;
+    rdfs:subClassOf :FFlatr,
+        :i .
+
+:FFlatm a owl:Class ;
+    rdfs:subClassOf :FFlatg,
+        :m .
+
+:FFlatn a owl:Class ;
+    rdfs:subClassOf :FFlate,
+        :n .
+
+:FFlatr a owl:Class ;
+    rdfs:subClassOf :FFlatT,
+        :r .
+
+:FFlatt a owl:Class ;
+    rdfs:subClassOf :FFlatn,
+        :t .
+
+:FFlatu a owl:Class ;
+    rdfs:subClassOf :FFlatA,
+        :u .
+
+:FHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:FMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:FMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:FSharpA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:FSharpHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:FSharpMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:FSharpMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:FSharpT a owl:Class ;
+    rdfs:subClassOf :FSharpd,
+        :T .
+
+:FSharpa a owl:Class ;
+    rdfs:subClassOf :FSharpi,
+        :a .
+
+:FSharpd a owl:Class ;
+    rdfs:subClassOf :FSharpa,
+        :FSharpe,
+        :d .
+
+:FSharpg a owl:Class ;
+    rdfs:subClassOf :FSharpu,
+        :g .
+
+:FSharpi a owl:Class ;
+    rdfs:subClassOf :FSharpr,
+        :i .
+
+:FSharpm a owl:Class ;
+    rdfs:subClassOf :FSharpg,
+        :m .
+
+:FSharpn a owl:Class ;
+    rdfs:subClassOf :FSharpe,
+        :n .
+
+:FSharpr a owl:Class ;
+    rdfs:subClassOf :FSharpT,
+        :r .
+
+:FSharpt a owl:Class ;
+    rdfs:subClassOf :FSharpn,
+        :t .
+
+:FSharpu a owl:Class ;
+    rdfs:subClassOf :FSharpA,
+        :u .
+
+:FT a owl:Class ;
+    rdfs:subClassOf :Fd,
+        :T .
+
+:Fa a owl:Class ;
+    rdfs:subClassOf :Fi,
+        :a .
+
+:Fd a owl:Class ;
+    rdfs:subClassOf :Fa,
+        :Fe,
+        :d .
+
+:Fg a owl:Class ;
+    rdfs:subClassOf :Fu,
+        :g .
+
+:Fi a owl:Class ;
+    rdfs:subClassOf :Fr,
+        :i .
+
+:Fm a owl:Class ;
+    rdfs:subClassOf :Fg,
+        :m .
+
+:Fn a owl:Class ;
+    rdfs:subClassOf :Fe,
+        :n .
+
+:Fr a owl:Class ;
+    rdfs:subClassOf :FT,
+        :r .
+
+:Ft a owl:Class ;
+    rdfs:subClassOf :Fn,
+        :t .
+
+:Fu a owl:Class ;
+    rdfs:subClassOf :FA,
+        :u .
+
+:GA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:GFlatA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:GFlatHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:GFlatMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:GFlatMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:GFlatT a owl:Class ;
+    rdfs:subClassOf :GFlatd,
+        :T .
+
+:GFlata a owl:Class ;
+    rdfs:subClassOf :GFlati,
+        :a .
+
+:GFlatd a owl:Class ;
+    rdfs:subClassOf :GFlata,
+        :GFlate,
+        :d .
+
+:GFlatg a owl:Class ;
+    rdfs:subClassOf :GFlatu,
+        :g .
+
+:GFlati a owl:Class ;
+    rdfs:subClassOf :GFlatr,
+        :i .
+
+:GFlatm a owl:Class ;
+    rdfs:subClassOf :GFlatg,
+        :m .
+
+:GFlatn a owl:Class ;
+    rdfs:subClassOf :GFlate,
+        :n .
+
+:GFlatr a owl:Class ;
+    rdfs:subClassOf :GFlatT,
+        :r .
+
+:GFlatt a owl:Class ;
+    rdfs:subClassOf :GFlatn,
+        :t .
+
+:GFlatu a owl:Class ;
+    rdfs:subClassOf :GFlatA,
+        :u .
+
+:GHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:GMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:GMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:GSharpA a owl:Class ;
+    rdfs:subClassOf :A .
+
+:GSharpHalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad .
+
+:GSharpMajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad .
+
+:GSharpMinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad .
+
+:GSharpT a owl:Class ;
+    rdfs:subClassOf :GSharpd,
+        :T .
+
+:GSharpa a owl:Class ;
+    rdfs:subClassOf :GSharpi,
+        :a .
+
+:GSharpd a owl:Class ;
+    rdfs:subClassOf :GSharpa,
+        :GSharpe,
+        :d .
+
+:GSharpg a owl:Class ;
+    rdfs:subClassOf :GSharpu,
+        :g .
+
+:GSharpi a owl:Class ;
+    rdfs:subClassOf :GSharpr,
+        :i .
+
+:GSharpm a owl:Class ;
+    rdfs:subClassOf :GSharpg,
+        :m .
+
+:GSharpn a owl:Class ;
+    rdfs:subClassOf :GSharpe,
+        :n .
+
+:GSharpr a owl:Class ;
+    rdfs:subClassOf :GSharpT,
+        :r .
+
+:GSharpt a owl:Class ;
+    rdfs:subClassOf :GSharpn,
+        :t .
+
+:GSharpu a owl:Class ;
+    rdfs:subClassOf :GSharpA,
+        :u .
+
+:GT a owl:Class ;
+    rdfs:subClassOf :Gd,
+        :T .
+
+:Ga a owl:Class ;
+    rdfs:subClassOf :Gi,
+        :a .
+
+:Gd a owl:Class ;
+    rdfs:subClassOf :Ga,
+        :Ge,
+        :d .
+
+:Gg a owl:Class ;
+    rdfs:subClassOf :Gu,
+        :g .
+
+:Gi a owl:Class ;
+    rdfs:subClassOf :Gr,
+        :i .
+
+:Gm a owl:Class ;
+    rdfs:subClassOf :Gg,
+        :m .
+
+:Gn a owl:Class ;
+    rdfs:subClassOf :Ge,
+        :n .
+
+:Gr a owl:Class ;
+    rdfs:subClassOf :GT,
+        :r .
+
+:Gt a owl:Class ;
+    rdfs:subClassOf :Gn,
+        :t .
+
+:Gu a owl:Class ;
+    rdfs:subClassOf :GA,
+        :u .
+
+mp:A a owl:Class ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:A ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:AFlat a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:Flat ;
+            owl:onProperty mp:hasAccidental ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:AFlat ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:ASharp a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:ASharp ;
+            owl:onProperty mp:hasPitch ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:Sharp ;
+            owl:onProperty mp:hasAccidental ] .
+
+mp:B a owl:Class ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:B ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:BFlat a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:Flat ;
+            owl:onProperty mp:hasAccidental ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:BFlat ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:BSharp a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:BSharp ;
+            owl:onProperty mp:hasPitch ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:Sharp ;
+            owl:onProperty mp:hasAccidental ] .
+
+mp:C a owl:Class ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:C ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:CFlat a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:CFlat ;
+            owl:onProperty mp:hasPitch ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:Flat ;
+            owl:onProperty mp:hasAccidental ] .
+
+mp:CSharp a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:CSharp ;
+            owl:onProperty mp:hasPitch ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:Sharp ;
+            owl:onProperty mp:hasAccidental ] .
+
+mp:D a owl:Class ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:D ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:DFlat a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:DFlat ;
+            owl:onProperty mp:hasPitch ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:Flat ;
+            owl:onProperty mp:hasAccidental ] .
+
+mp:DSharp a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:Sharp ;
+            owl:onProperty mp:hasAccidental ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:DSharp ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:E a owl:Class ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:E ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:EFlat a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:EFlat ;
+            owl:onProperty mp:hasPitch ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:Flat ;
+            owl:onProperty mp:hasAccidental ] .
+
+mp:ESharp a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:Sharp ;
+            owl:onProperty mp:hasAccidental ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:ESharp ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:F a owl:Class ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:F ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:FFlat a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:Flat ;
+            owl:onProperty mp:hasAccidental ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:FFlat ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:FSharp a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:FSharp ;
+            owl:onProperty mp:hasPitch ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:Sharp ;
+            owl:onProperty mp:hasAccidental ] .
+
+mp:G a owl:Class ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:G ;
+            owl:onProperty mp:hasPitch ] .
+
+mp:GFlat a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:GFlat ;
+            owl:onProperty mp:hasPitch ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:Flat ;
+            owl:onProperty mp:hasAccidental ] .
+
+mp:GSharp a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf mp:Note ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue mp:Sharp ;
+            owl:onProperty mp:hasAccidental ],
+        [ a owl:Restriction ;
+            owl:hasValue mp:GSharp ;
+            owl:onProperty mp:hasPitch ] .
+
+:AFlatMinorTriad a owl:Class ;
+    rdfs:subClassOf :AFlatMinorSeventhTetrad,
+        :MinorTriad .
+
+:AFlate a owl:Class ;
+    rdfs:subClassOf :AFlatm,
+        :AFlatt,
+        :e .
+
+:ASharpe a owl:Class ;
+    rdfs:subClassOf :ASharpm,
+        :ASharpt,
+        :e .
+
+:Ae a owl:Class ;
+    rdfs:subClassOf :Am,
+        :At,
+        :e .
+
+:BFlatDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :BFlatHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:BFlate a owl:Class ;
+    rdfs:subClassOf :BFlatm,
+        :BFlatt,
+        :e .
+
+:BSharpe a owl:Class ;
+    rdfs:subClassOf :BSharpm,
+        :BSharpt,
+        :e .
+
+:Be a owl:Class ;
+    rdfs:subClassOf :Bm,
+        :Bt,
+        :e .
+
+:CFlate a owl:Class ;
+    rdfs:subClassOf :CFlatm,
+        :CFlatt,
+        :e .
+
+:CSharpe a owl:Class ;
+    rdfs:subClassOf :CSharpm,
+        :CSharpt,
+        :e .
+
+:Ce a owl:Class ;
+    rdfs:subClassOf :Cm,
+        :Ct,
+        :e .
+
+:DFlate a owl:Class ;
+    rdfs:subClassOf :DFlatm,
+        :DFlatt,
+        :e .
+
+:DSharpe a owl:Class ;
+    rdfs:subClassOf :DSharpm,
+        :DSharpt,
+        :e .
+
+:De a owl:Class ;
+    rdfs:subClassOf :Dm,
+        :Dt,
+        :e .
+
+:EFlatDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DiminishedTriad,
+        :EFlatHalfDiminishedTetrad .
+
+:EFlate a owl:Class ;
+    rdfs:subClassOf :EFlatm,
+        :EFlatt,
+        :e .
+
+:ESharpe a owl:Class ;
+    rdfs:subClassOf :ESharpm,
+        :ESharpt,
+        :e .
+
+:Ee a owl:Class ;
+    rdfs:subClassOf :Em,
+        :Et,
+        :e .
+
+:FFlate a owl:Class ;
+    rdfs:subClassOf :FFlatm,
+        :FFlatt,
+        :e .
+
+:FSharpe a owl:Class ;
+    rdfs:subClassOf :FSharpm,
+        :FSharpt,
+        :e .
+
+:Fe a owl:Class ;
+    rdfs:subClassOf :Fm,
+        :Ft,
+        :e .
+
+:GFlate a owl:Class ;
+    rdfs:subClassOf :GFlatm,
+        :GFlatt,
+        :e .
+
+:GSharpe a owl:Class ;
+    rdfs:subClassOf :GSharpm,
+        :GSharpt,
+        :e .
+
+:Ge a owl:Class ;
+    rdfs:subClassOf :Gm,
+        :Gt,
+        :e .
+
+:DSharpMajorTriad a owl:Class ;
+    rdfs:subClassOf :DSharpMajorSeventhTetrad,
+        :MajorTriad .
+
+:GSharpMajorTriad a owl:Class ;
+    rdfs:subClassOf :GSharpMajorSeventhTetrad,
+        :MajorTriad .
+
+:RomanNumeralAnalysis a owl:Class .
+
+:Tetrad a owl:Class ;
+    rdfs:subClassOf mp:Chord .
+
+:Triad a owl:Class ;
+    rdfs:subClassOf :Tetrad .
+
+:ASharpMinorTriad a owl:Class ;
+    rdfs:subClassOf :ASharpMinorSeventhTetrad,
+        :MinorTriad .
+
+:DSharpMinorTriad a owl:Class ;
+    rdfs:subClassOf :DSharpMinorSeventhTetrad,
+        :MinorTriad .
+
+:GFlatMajorTriad a owl:Class ;
+    rdfs:subClassOf :GFlatMajorSeventhTetrad,
+        :MajorTriad .
+
+:hasDegree a owl:ObjectProperty .
+
+:CSharpMajorTriad a owl:Class ;
+    rdfs:subClassOf :CSharpMajorSeventhTetrad,
+        :MajorTriad .
+
+:FSharpDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DiminishedTriad,
+        :FSharpHalfDiminishedTetrad .
+
+:BDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :BHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:CSharpDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :CSharpHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:EDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DiminishedTriad,
+        :EHalfDiminishedTetrad .
+
+:GSharpDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DiminishedTriad,
+        :GSharpHalfDiminishedTetrad .
+
+:ADiminishedTriad a owl:Class ;
+    rdfs:subClassOf :AHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:ASharpDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :ASharpHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:DSharpDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DSharpHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:CDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :CHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:DDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DHalfDiminishedTetrad,
+        :DiminishedTriad .
+
+:DFlatMajorTriad a owl:Class ;
+    rdfs:subClassOf :DFlatMajorSeventhTetrad,
+        :MajorTriad .
+
+:FDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DiminishedTriad,
+        :FHalfDiminishedTetrad .
+
+:GDiminishedTriad a owl:Class ;
+    rdfs:subClassOf :DiminishedTriad,
+        :GHalfDiminishedTetrad .
+
+:EFlatMinorTriad a owl:Class ;
+    rdfs:subClassOf :EFlatMinorSeventhTetrad,
+        :MinorTriad .
+
+:FSharpMajorTriad a owl:Class ;
+    rdfs:subClassOf :FSharpMajorSeventhTetrad,
+        :MajorTriad .
+
+:AMinorTriad a owl:Class ;
+    rdfs:subClassOf :AMinorSeventhTetrad,
+        :MinorTriad .
+
+:DMajorTriad a owl:Class ;
+    rdfs:subClassOf :DMajorSeventhTetrad,
+        :MajorTriad .
+
+:DMinorTriad a owl:Class ;
+    rdfs:subClassOf :DMinorSeventhTetrad,
+        :MinorTriad .
+
+:BFlatMinorTriad a owl:Class ;
+    rdfs:subClassOf :BFlatMinorSeventhTetrad,
+        :MinorTriad .
+
+:EFlatMajorTriad a owl:Class ;
+    rdfs:subClassOf :EFlatMajorSeventhTetrad,
+        :MajorTriad .
+
+:GMinorTriad a owl:Class ;
+    rdfs:subClassOf :GMinorSeventhTetrad,
+        :MinorTriad .
+
+:AFlatMajorTriad a owl:Class ;
+    rdfs:subClassOf :AFlatMajorSeventhTetrad,
+        :MajorTriad .
+
+:AMajorTriad a owl:Class ;
+    rdfs:subClassOf :AMajorSeventhTetrad,
+        :MajorTriad .
+
+:BFlatMajorTriad a owl:Class ;
+    rdfs:subClassOf :BFlatMajorSeventhTetrad,
+        :MajorTriad .
+
+:BMinorTriad a owl:Class ;
+    rdfs:subClassOf :BMinorSeventhTetrad,
+        :MinorTriad .
+
+:CMajorTriad a owl:Class ;
+    rdfs:subClassOf :CMajorSeventhTetrad,
+        :MajorTriad .
+
+:EMinorTriad a owl:Class ;
+    rdfs:subClassOf :EMinorSeventhTetrad,
+        :MinorTriad .
+
+:FMajorTriad a owl:Class ;
+    rdfs:subClassOf :FMajorSeventhTetrad,
+        :MajorTriad .
+
+:GMajorTriad a owl:Class ;
+    rdfs:subClassOf :GMajorSeventhTetrad,
+        :MajorTriad .
+
+:EMajorTriad a owl:Class ;
+    rdfs:subClassOf :EMajorSeventhTetrad,
+        :MajorTriad .
+
+:CMinorTriad a owl:Class ;
+    rdfs:subClassOf :CMinorSeventhTetrad,
+        :MinorTriad .
+
+:FSharpMinorTriad a owl:Class ;
+    rdfs:subClassOf :FSharpMinorSeventhTetrad,
+        :MinorTriad .
+
+:GSharpMinorTriad a owl:Class ;
+    rdfs:subClassOf :GSharpMinorSeventhTetrad,
+        :MinorTriad .
+
+:CSharpMinorTriad a owl:Class ;
+    rdfs:subClassOf :CSharpMinorSeventhTetrad,
+        :MinorTriad .
+
+:BMajorTriad a owl:Class ;
+    rdfs:subClassOf :BMajorSeventhTetrad,
+        :MajorTriad .
+
+:FMinorTriad a owl:Class ;
+    rdfs:subClassOf :FMinorSeventhTetrad,
+        :MinorTriad .
+
+:DiminishedTriad a owl:Class ;
+    rdfs:subClassOf :HalfDiminishedTetrad,
+        :Triad .
+
+:HarmonicMinorScale a owl:Class ;
+    rdfs:subClassOf :RomanNumeralAnalysis .
+
+:MajorScale a owl:Class ;
+    rdfs:subClassOf :RomanNumeralAnalysis .
+
+:MajorTriad a owl:Class ;
+    rdfs:subClassOf :MajorSeventhTetrad,
+        :Triad .
+
+:MelodicMinorScale a owl:Class ;
+    rdfs:subClassOf :RomanNumeralAnalysis .
+
+:MinorScale a owl:Class ;
+    rdfs:subClassOf :RomanNumeralAnalysis .
+
+:MinorTriad a owl:Class ;
+    rdfs:subClassOf :MinorSeventhTetrad,
+        :Triad .
+
+:HalfDiminishedTetrad a owl:Class ;
+    rdfs:subClassOf :Tetrad .
+
+:MajorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :Tetrad .
+
+:MinorSeventhTetrad a owl:Class ;
+    rdfs:subClassOf :Tetrad .
+
+:hasFifthDegree a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasDegree .
+
+:hasFirstDegree a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasDegree .
+
+:hasFourthDegree a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasDegree .
+
+:hasSecondDegree a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasDegree .
+
+:hasSeventhDegree a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasDegree .
+
+:hasSixthDegree a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasDegree .
+
+:hasThirdDegree a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasDegree .
+

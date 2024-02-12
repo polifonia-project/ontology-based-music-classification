@@ -1,0 +1,20 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+PREFIX core: <http://w3id.org/polifonia/ontology/core/>
+PREFIX mm: <http://w3id.org/polifonia/ontology/music-meta/>
+PREFIX mp: <http://w3id.org/polifonia/ontology/music-projection/>
+PREFIX jams: <http://w3id.org/polifonia/ontology/jams/>
+
+SELECT DISTINCT ?entity ?title ?artist WHERE {
+  ?entity a mm:MusicEntity ;
+  	      core:title ?title .
+
+  OPTIONAL {
+    ?entity mm:hasArtist [ core:name ?artist ] .
+  }
+
+  BIND(SHA512(CONCAT(STR(RAND()), STR(?entity))) AS ?random) .
+}
+ORDER BY ?random
+LIMIT 1

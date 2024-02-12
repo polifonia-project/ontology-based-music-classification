@@ -1,0 +1,16 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+PREFIX mm: <http://w3id.org/polifonia/ontology/music-meta/>
+PREFIX mp: <http://w3id.org/polifonia/ontology/music-projection/>
+PREFIX jams: <http://w3id.org/polifonia/ontology/jams/>
+
+SELECT DISTINCT ?key WHERE {
+  BIND (<%s> as ?entity)
+  
+  ?entity jams:hasJAMSAnnotation ?annotation .
+  ?annotation jams:hasAnnotationType "key_mode" ;
+              jams:includesObservation ?observation . 
+  
+  ?observation jams:hasSubject [ jams:hasKeyModeSubject [ rdfs:label ?key ] ] .
+}
